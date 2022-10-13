@@ -1,14 +1,8 @@
-from ase import Atoms, Atom
 from ase.io import read, write
 from ase.visualize import view
 from ase.neighborlist import neighbor_list
 from collections import Counter
-from collections import defaultdict, OrderedDict
-from itertools import combinations, combinations_with_replacement
-import random
-from ase.build import bulk
-import math
-from ase.io.trajectory import Trajectory
+from collections import defaultdict
 
 class SRO:
 
