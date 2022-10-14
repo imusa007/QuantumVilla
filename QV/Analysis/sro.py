@@ -35,7 +35,7 @@ class SRO:
         sros=[]
         for shell_number in range(len(self.cutoffs)): 
             R_A_random=Counter(self.elements)[A]/sum(Counter(self.elements).values())
-            R_B_random=Counter(self.elements)[B]/sum(Counter(self.elements).values())
+            #R_B_random=Counter(self.elements)[B]/sum(Counter(self.elements).values())
             R_A_mc=self.ndatas[shell_number][A][B]/sum(self.ndatas[shell_number][A].values())
             sros.append((1-R_A_mc/R_A_random))
         return sros
